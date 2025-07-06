@@ -1,0 +1,6 @@
+sessions,time_spent,clicks,converted,actions
+5,120,8,1,"login;search;checkout"
+3,90,6,0,"login;browse"
+6,180,10,1,"login;search;add_to_cart;checkout"
+2,60,3,0,"login;search"
+4,110,7,1,"login;browse;add_to_cart;checkout"
