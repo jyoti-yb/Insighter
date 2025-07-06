@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>InsightSniffer Dashboard</title>
+  <style>
+    .data { border-collapse: collapse; width: 100%; }
+    .data th, .data td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Upload Product Usage CSV</h1>
+  <form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit">
+  </form>
+
+  {% if tables %}
+  <h2>Clustered User Data</h2>
+  {{ tables[0]|safe }}
+  {% endif %}
+
+  {% if rules %}
+  <h2>Association Rules</h2>
+  {{ rules|safe }}
+  {% endif %}
+
+  {% if shap_plot %}
+  <h2>SHAP Feature Impact</h2>
+ 
+  <img src="{{ shap_plot }}" width="100%" />
+
+  
+  {% endif %}
+</body>
+</html>
