@@ -1,0 +1,34 @@
+[
+  {
+    "event": "login",
+    "properties": {
+      "distinct_id": "user1",
+      "time_spent": 45,
+      "clicks": 3
+    }
+  },
+  {
+    "event": "search",
+    "properties": {
+      "distinct_id": "user1",
+      "time_spent": 75,
+      "clicks": 5
+    }
+  },
+  {
+    "event": "login",
+    "properties": {
+      "distinct_id": "user2",
+      "time_spent": 20,
+      "clicks": 2
+    }
+  },
+  {
+    "event": "checkout",
+    "properties": {
+      "distinct_id": "user2",
+      "time_spent": 60,
+      "clicks": 6
+    }
+  }
+]
